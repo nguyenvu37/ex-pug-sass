@@ -1,0 +1,33 @@
+
+// Hero Section
+section
+    .box.hero
+        .hero__categories
+            .hero__categories__all
+                i(class="fas fa-bars")
+                span All departments
+            ul
+                each department in listDepartments
+                    li
+                        a(href="#") #{department}
+        .hero__search
+            .hero__search__form
+                form(action="#")
+                    .hero__search__categories All Categories
+                    input(type="text" placeholder="What do yo u need?")
+                    button(class="hero__categories--btn") SEARCH
+            .hero__search__phone
+                .hero__search__phone__icon
+                    i(class="fas fa-phone-alt")
+                .hero__search__phone__text
+                    h5 +65 11.188.888
+                    span support 24/7 time
+        .hero__item
+            .hero__item__bg
+            .hero__item__text
+                .hero__item__text--heading
+                    span FRUIT FRESH
+                h2 Vegetable
+                    br/ 100% Organic
+                p Free Pickup and Delivery Available
+                a(href="#" class="hero__item--btn") SHOP NOW

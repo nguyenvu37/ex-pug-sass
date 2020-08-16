@@ -1,0 +1,45 @@
+@mixin font($size: inherit, $weight: inherit, $lineHeight: inherit, $color: #212529) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    color: $color;
+}
+
+@mixin verticalTiles($r, $t, $h, $w, $bg: #000, $op: 0.1) {
+    position: absolute;
+    right: $r;
+    top: $t;
+    height: $h;
+    width: $w;
+    background: $bg;
+    opacity: $op;
+    content: '';
+}
+
+@mixin button($size, $padding, $bg: #7fad39, $cl: #fff) {
+    font-size: $size;
+    color: $cl;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: $padding;
+    background: $bg;
+    border: none;
+}
+
+@mixin circleIcon($size, $color, $h, $w, $bg, $lh) {
+    font-size: $size;
+    color: $color;
+    height: $h;
+    width: $w;
+    background: $bg;
+    line-height: $lh;
+    text-align: center;
+    border-radius: 50%;
+}
+
+@mixin  fontFooter($size, $lh) {
+    color: #1c1c1c;
+    font-size: $size;
+    line-height: $lh;
+}

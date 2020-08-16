@@ -1,0 +1,83 @@
+@import '_variables';
+@import '_mixins';
+@import '_placeholders';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $bg-color;
+    @include font(1rem, 400, 1.5);
+    
+    .box {
+        width: 1140px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    a {
+        text-decoration: none;
+        transition: all 0.3s;
+        &:hover {
+            text-decoration: none;
+            outline: none;
+        }
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        & li {
+            list-style: none;
+        }
+    }
+
+    h2 {
+        @include font(2.4rem, 700);
+    }
+
+    h4 {
+        @include font(1.5rem, 700);
+    }
+    
+    h5 {
+        @include font(1.1rem, 700);
+    }
+
+    h6 {
+        @include font(1rem, 400);
+
+        & a {
+            color: $color;
+        }
+    }
+
+    p {
+        @include font(1rem, 400, 26px, #6f6f6f);
+        margin: 0 0 15px 0;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    button {
+        &:hover {
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    .set-bg {
+        @extend %bg-img;
+    }
+
+    .section-title {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}

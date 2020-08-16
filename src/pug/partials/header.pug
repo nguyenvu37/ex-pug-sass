@@ -1,0 +1,48 @@
+include variables
+
+include ../layouts/navigation
+header  
+    .header__top
+        .box
+            .header__top__left
+                ul
+                    each contact in listContacts
+                        li
+                            if contact.class
+                                i(class=contact.class)
+                                | #{contact.text}
+                            else 
+                                | #{contact.text}
+            .header__top__right
+                .header__top__right__social
+                    each social in listSocials
+                        a(href="#")
+                            i(class=social)
+                .header__top__right__auth
+                    a(href="#")
+                        i(class="fa fa-user")
+                        | Login
+    .header__bottom
+        .box 
+            .header__bottom__logo
+                a(href="#") 
+                    img(src="../../../assets/img/logo.png" alt="")
+            nav.header__bottom__menu
+                ul
+                    each menu in listMenu
+                        li(class=menu.class)
+                            a(href="#") #{menu.content}
+                            if menu.dropdown
+                                ul.header__menu__dropdown
+                                    each item in menu.dropdown
+                                        li
+                                            a(href="#") #{item}
+            .header__bottom__cart
+                ul
+                    each cart in listCarts
+                        li
+                            a(href="#")
+                                i(class=cart.class)
+                                    span #{cart.span}
+                .header__cart__price item: 
+                    span $150.00

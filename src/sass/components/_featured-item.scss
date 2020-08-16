@@ -1,0 +1,87 @@
+.featured__item {
+    padding: 0 10px;
+    position: relative;
+
+    &:hover .featured__item__pic__hover {
+        opacity: 1;
+        bottom: 20px;
+        transition: all, 0.5s;
+    }
+
+    &__pic {
+        height: 270px;
+        position: relative;
+
+        &.featured-img-1 {
+            background-image: url('../../../assets/img/featured/feature-1.jpg');
+        }
+
+        &.featured-img-2 {
+            background-image: url('../../../assets/img/featured/feature-2.jpg');
+        }
+
+        &.featured-img-3 {
+            background-image: url('../../../assets/img/featured/feature-3.jpg');
+        }
+
+        &.featured-img-4 {
+            background-image: url('../../../assets/img/featured/feature-4.jpg');
+        }
+
+        &.featured-img-5 {
+            background-image: url('../../../assets/img/featured/feature-5.jpg');
+        }
+
+        &.featured-img-6 {
+            background-image: url('../../../assets/img/featured/feature-6.jpg');
+        }
+
+        &.featured-img-7 {
+            background-image: url('../../../assets/img/featured/feature-7.jpg');
+        }
+
+        &.featured-img-8 {
+            background-image: url('../../../assets/img/featured/feature-8.jpg');
+        }
+
+        &__hover {
+            position: absolute;
+            display: flex;
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            justify-content: center;
+            opacity: 0;
+
+            li {
+                margin-left: 10px;
+
+                &:hover a {
+                    background: #7fad39;
+                    border-color: #7fad39;
+                }
+
+                a {
+                    @include circleIcon(16px, #1c1c1c, 40px, 40px, #fff, 40px);
+                    border: 1px solid #ebebeb;
+                    display: block;
+                    transition: all, 0.5s;
+
+                    &:hover i {
+                        color: #fff;
+                        transform: rotate(360deg);
+                    }
+
+                    i {
+                        transition: all, 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+    &__text {
+        text-align: center;
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,37 @@
+@keyframes slider {
+    0% {left: 0;}
+    100% {left: -100%;}
+}
+
+@keyframes sliderImg {
+    0% {background-image: url('../../../assets/img/hero/banner3.jpg');}
+    25% {background-image: url('../../../assets/img/hero/banner.jpg');}
+    50% {background-image: url('../../../assets/img/hero/banner1.jpg');}
+    75% {background-image: url('../../../assets/img/hero/banner4.jpg');}
+    100% {background-image: url('../../../assets/img/hero/banner5.jpg');}
+}
+
+@keyframes heading {
+    0% {top: 0px;}
+    100% {top: 90%;}
+}
+
+@keyframes h2 {
+    0% {left: -400px; opacity: 0;}
+    100% {left: 0; opacity: 1;}
+}
+
+@keyframes content {
+    0% {right: -100%; opacity: 0;}
+    100% {right: 0%; opacity: 1;}
+}
+
+@keyframes button {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes navi {
+    0% {left: -500px; opacity: 0;}
+    100% {left: 0px; opacity: 1;}
+}

@@ -1,0 +1,58 @@
+mixin categories(className, content)
+    .categories__item(class=className)
+        h5
+            a(href="#") #{content}
+
+mixin featured(img)
+    .featured__item
+        .featured__item__pic.set-bg(class=img)
+            ul.featured__item__pic__hover
+                each icon in listIconFeatureds
+                    li
+                        a(href="#")
+                            i(class=icon)
+        .featured__item__text
+            h6
+                a(href="#") Crab Pool Security
+            h5 $30.00
+
+mixin banner(img)
+    .banner__pic
+        img(src=img)
+
+mixin latestProduct(title)
+    .latest-product__box
+        h4 #{title}
+        .latest-product__line
+            figure
+                .latest-product__slider.slider1
+                    each item in listImgLatests
+                        a.latest-product__slider__item(href="#")
+                            .latest-product__slider__item__pic
+                                img(src='../../../../assets/'+ item)
+                            .latest-product__slider__item__text
+                                h6 Crab Pool Security
+                                span $30.00
+                .latest-product__slider.slider2
+                    each item in listImgLatests
+                        a.latest-product__slider__item(href="#")
+                            .latest-product__slider__item__pic
+                                img(src='../../../../assets/'+ item)
+                            .latest-product__slider__item__text
+                                h6 Crab Pool Security
+                                span $30.00                
+                
+
+mixin blog(img, heading5, param, className)
+    .blog__item(class=className)
+        .blog__item__pic
+            img(src=img alt="")
+        .blog__item__text
+            ul  
+                each blogItem in listBlogItems
+                    li
+                        i(class=blogItem.className)
+                        | #{blogItem.content}
+            h5
+                a(href="#")= heading5
+            p= param

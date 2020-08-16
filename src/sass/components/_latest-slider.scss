@@ -1,0 +1,31 @@
+.latest-product__slider {
+    float: left;
+    width: 50%;
+
+    &__item {
+        width: 100%;
+        display: flex;
+
+        &__pic {
+            flex:1;
+        }
+
+        &__text {
+            flex: 3;
+            padding-left: 30px;
+            padding-top: 20px;
+
+            h6 {
+                color: #252525;
+                margin-bottom: 5px;
+            }
+
+            span {
+                font-size: 18px;
+                display: block;
+                color: #252525;
+                font-weight: 700;
+            }
+        }
+    }
+}

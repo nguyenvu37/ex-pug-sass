@@ -1,0 +1,30 @@
+// Categories Section
+include ../partials/mixin
+
+section.categories
+    .box
+        .categories__slider
+            figure 
+                input#r1(type="radio" name="r" checked)
+                input#r2(type="radio" name="r")
+                input#r3(type="radio" name="r")
+                input#r4(type="radio" name="r")
+                input#r5(type="radio" name="r")
+                input#r6(type="radio" name="r")
+                input#r7(type="radio" name="r")
+                +categories('set-bg img-bg-1', 'Fresh Fruit')
+                +categories('set-bg img-bg-2', 'Dried Fruit')
+                +categories('set-bg img-bg-3', 'Vegetables')
+                +categories('set-bg img-bg-4', 'Meats')
+                +categories('set-bg img-bg-5', 'Drink Fruits')
+                +categories('set-bg img-bg-1', 'Fresh Fruit')
+                +categories('set-bg img-bg-2', 'Dried Fruit')
+                +categories('set-bg img-bg-3', 'Vegetables')
+                .navigation
+                    label.bar.bar1(for="r1")
+                    label.bar.bar2(for="r2")
+                    label.bar.bar3(for="r3")
+                    label.bar.bar4(for="r4")
+                    label.bar.bar5(for="r5")
+                    label.bar.bar6(for="r6")
+                    label.bar.bar7(for="r7")

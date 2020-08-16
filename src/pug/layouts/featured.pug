@@ -1,0 +1,19 @@
+// Featured Section 
+section
+    .box.featured
+        .featured__product
+            .featured__product__title.section-title
+                h2 Featured Product
+            .featured__product__controls
+                ul
+                    each title in listTitles
+                        li(class=title.className) #{title.content}
+        .featured__filter
+            +featured('featured-img-1')
+            +featured('featured-img-2')
+            +featured('featured-img-3')
+            +featured('featured-img-4')
+            +featured('featured-img-5')
+            +featured('featured-img-6')
+            +featured('featured-img-7')
+            +featured('featured-img-8')

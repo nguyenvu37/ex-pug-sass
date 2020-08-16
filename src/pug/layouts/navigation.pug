@@ -1,0 +1,61 @@
+.nav
+    .box
+        .nav-bar   
+            .nav__logo
+                a(href="#")
+                    img(src="../../../assets/img/logo.png" alt="")
+                .nav__logo__cart.cart
+                    ul
+                        each cart in listCarts
+                            li
+                                a(href="#")
+                                    i(class=cart.class)
+                                        span #{cart.span}
+                    .nav__logo__price.cart-price item: 
+                        span $150.00
+            .nav__icon
+                input.nav__icon__checkbox#nav-toggle(type="checkbox")
+                label.nav__icon__button(for="nav-toggle") 
+                    i(class="fas fa-bars open")
+                    i(class="far fa-times-circle close")
+                .nav__icon__bg
+                .nav__wrapper
+                    .nav__wrapper__logo
+                        a(href="#")
+                            img(src="../../../assets/img/logo.png" alt="")
+                    .nav__wrapper__cart.cart
+                        ul
+                            each cart in listCarts
+                                li
+                                    a(href="#")
+                                        i(class=cart.class)
+                                            span #{cart.span}
+                        .nav__wrapper__cart__price.cart-price item: 
+                            span $150.00
+                    .nav__wrapper__auth
+                        a(href="#")
+                            i(class="fa fa-user")
+                            | Login
+                    nav.nav__wrapper__menu
+                        ul
+                            each menu in listMenu
+                                li(class=menu.class)
+                                    a(href="#") #{menu.content}
+                                    if menu.dropdown
+                                        ul.header__menu__dropdown
+                                            each item in menu.dropdown
+                                                li
+                                                    a(href="#") #{item}
+                    .nav__wrapper__social
+                        each social in listSocials
+                            a(href="#")
+                                i(class=social)
+                    .nav__wrapper__contact
+                        ul
+                            each contact in listContacts
+                                li
+                                    if contact.class
+                                        i(class=contact.class)
+                                        | #{contact.text}
+                                    else 
+                                        | #{contact.text}

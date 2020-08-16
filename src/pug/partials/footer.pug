@@ -1,0 +1,29 @@
+footer
+    .box.footer
+        .footer__about
+            .footer__about__logo
+                a(href="#")
+                    img(src="../../../assets/img/logo.png")
+            ul
+                each contact in listContactFooters
+                    li #{contact}
+        .footer__widget
+            h6 Useful Links
+            ul
+                each link1 in listLinks1
+                    li 
+                        a(href="#") #{link1}
+            ul
+                each link2 in listLinks2
+                    li
+                        a(href="#") #{link2}
+        .footer__contact
+            h6 Join Our Newsletter Now
+            p Get E-mail updates about our latest shop and special offers.
+            form
+                input(type="text" placeholder="Enter your mail")
+                button.footer__contact--btn(type="submit") Subscrise
+            .footer__contact__social
+                each icon in listSocialFooters
+                    a(href="#")
+                        i(class=icon)

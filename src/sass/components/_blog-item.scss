@@ -1,0 +1,36 @@
+.blog__item {
+    padding: 0 10px;
+
+    &__text {
+        padding-top: 20px;
+
+        ul {
+            display: flex;
+            margin-bottom: 10px;
+
+            li {
+                font-size: 16px;
+                color: #b2b2b2;
+                margin-right: 15px;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        h5 {
+            margin-bottom: 12px;
+
+            a {
+                font-size: 20px;
+                color: #1c1c1c;
+                font-weight: 700;
+            }
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+    }
+}

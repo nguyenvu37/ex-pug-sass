@@ -1,0 +1,39 @@
+.cart {
+    flex: 2;
+    display: flex;
+    padding: 15px 0;
+
+    ul {
+        display: inline-flex;
+        margin-right: 1rem;
+
+        li {
+            margin-right: 1rem;
+            position: relative;
+
+            a {
+                font-size: 14px;
+                color: #1c1c1c;
+
+                span {
+                    @include circleIcon(10px, #fff, 13px, 13px, #7fad39, 13px);
+                    font-weight: 700;
+                    position: absolute;
+                    top: 0;
+                    right: -12px;
+                }
+            }
+        }
+    }
+
+    .cart-price {
+        @extend %element-a;
+        color: #6f6f6f;
+        padding: 5px 0;
+
+        & span {
+            color: #252525;
+            font-weight: 700;
+        }
+    }
+}

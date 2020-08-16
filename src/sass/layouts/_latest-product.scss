@@ -1,0 +1,32 @@
+@import '../components/latest-slider';
+
+.latest-product {
+    width: 100%;
+    margin-top: 50px;
+
+    &__content {
+        width: 100%;
+        display: flex;
+
+        .latest-product__box {
+            flex: 1;
+            padding: 0 10px;
+
+            h4 {
+                margin-bottom: 35px;
+            }
+
+            .latest-product__line {
+                overflow: hidden;
+
+                figure {
+                    position: relative;
+                    width: 200%;
+                    left: 0;
+                    animation: slider 4s infinite;
+                }
+            }
+            
+        }
+    }
+}
